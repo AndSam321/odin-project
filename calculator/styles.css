@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 350px; /* Fixed width for the calculator container */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calculator-screen {
+    width: calc(100% - 60px); /* Width minus the width of the clear button */
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+}
+
+#clear-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #b5bde7;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#clear-btn:hover {
+    background-color: rgb(221, 166, 166);
+}
+
+.other-rows {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    flex: 1;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e1e1e1;
+}
+
+.btn:hover {
+    background-color: #d1d1d1;
+}
+
+.number {
+    background-color: #f1f1f1;
+}
+
+.number:hover {
+    background-color: rgb(173, 166, 221);
+}
+
+.operator {
+    background-color: #9e83c8;
+}
+
+.operator:hover {
+    background-color: rgb(221, 166, 221);
+}
+
+.decimal {
+    background-color: #f1f1f1;
+}
+
+.decimal:hover {
+    background-color: rgb(221, 221, 166);
+}
+
+.equal {
+    background-color: #b5bde7;
+    color: white;
+}
+
+.equal:hover {
+    background-color: rgb(166, 221, 166);
+}
